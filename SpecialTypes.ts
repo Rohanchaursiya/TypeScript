@@ -16,4 +16,8 @@ let v: any = true;
 v = "string"; // no error as it can be "any" type
 Math.round(v); // no error as it can be "any" type
 
+// `any can be a useful way to get past errors since it disables type checking,
+//  but TypeScript will not be able provide type safety, and tools which rely on type data,
+//  such as auto completion, will not work. Remember, it should be avoided at "any" cost...`
+
 
